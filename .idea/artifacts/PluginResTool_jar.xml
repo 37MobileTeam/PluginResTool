@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="PluginResTool:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/PluginResTool_jar</output-path>
+    <root id="archive" name="PluginResTool.jar">
+      <element id="module-output" name="PluginResTool" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/dom4j-2.1.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

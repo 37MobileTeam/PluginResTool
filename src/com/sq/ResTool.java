@@ -1,11 +1,11 @@
 package com.sq;
 
 import com.sq.bean.PublicXmlBean;
+import com.sq.config.Config;
 import com.sq.helper.PublicAndRHelper;
-import com.sq.tool.ApkSignUtil;
 import com.sq.tool.DecodeUtil;
 import com.sq.tool.LogUtil;
-import com.sq.tool.ZipAlignUtils;
+
 import org.dom4j.DocumentException;
 
 import java.io.File;
@@ -15,13 +15,28 @@ import java.io.File;
  */
 public class ResTool {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
+        //获得配置
+        File directory = new File("");
+        String rootDir = directory.getCanonicalPath();
+        Config config = new Config(
+                rootDir + File.separator + "apktool_2.3.3.jar",
+                rootDir + File.separator + "plugin.apk",
+                rootDir + File.separator + "work",
+                "00500000");
+        //处理
+        handleResPkg(config);
+    }
 
-        String apkPath = args[0];
+    public static void handleResPkg(Config config) {
+
+        LogUtil.d("配置文件内容： " + config.toString());
+        String apkPath = config.originalApkPath;
         LogUtil.d("apk路径为: " + apkPath);
 
-        String apkToolPath = "/Users/zhuxiaoxin/work/sq/channel/apktool_2.3.3.jar";
-        String tempApkPath = "/Users/zhuxiaoxin/work/sq/channel/插件化/work/";
+        String tempApkPath = config.tempApkPath;
+        LogUtil.d("反编译临时路径为: " + tempApkPath);
+
         File tempApkFile = new File(tempApkPath);
         if (tempApkFile.exists()) {
             tempApkFile.delete();
@@ -30,40 +45,23 @@ public class ResTool {
 
         File sourceApk = new File(tempApkPath + File.separator + "dist");
 
-        DecodeUtil decodeUtil = new DecodeUtil(apkToolPath);
+        DecodeUtil decodeUtil = new DecodeUtil(config.apktoolPath);
         decodeUtil.decode(apkPath, tempApkPath);
 
         //处理public逻辑
-        handlePublicXml(tempApkPath);
+        handlePublicXml(tempApkPath, config.addBigValue);
 
         decodeUtil.encode(tempApkPath);
-
-        String keyStoreFile =  System.getProperty("user.dir") + File.separator+"keystore"+File.separator + "37.keystore";
-        ApkSignUtil apkSignUtil = new ApkSignUtil(LocalPropertiesConfig.getInstance().jarsignerAtLinux,
-                keyStoreFile,
-                LocalPropertiesConfig.getInstance().SECRET_STOREPASS,
-                LocalPropertiesConfig.getInstance().SECRET_KEY_ALI,
-                LocalPropertiesConfig.getInstance().SECRET_KEYPASS
-        );
-        File[] apks = sourceApk.listFiles();
-        if (apks.length > 0) {
-            File souceApkFile = apks[0];
-            String signedApkPath =  souceApkFile.getParentFile().getAbsolutePath() + File.separator + "signed_" + souceApkFile.getName();
-            apkSignUtil.signApk(souceApkFile.getAbsolutePath(), signedApkPath);
-            String zipalignCmd = LocalPropertiesConfig.getInstance().zipalignAtLinux;
-            String alignApkPath = souceApkFile.getParentFile().getAbsolutePath() + File.separator + "signed_aligned_" + souceApkFile.getName();
-            ZipAlignUtils.execute(zipalignCmd, signedApkPath, alignApkPath);
-        }
     }
 
     /**
-     * 将0x7f改为0x8f
+     * 处理xml文件
      */
-    private static void handlePublicXml(String tempApkPath) {
-        String publicXmlPath = tempApkPath + "res" + File.separator + "values" + File.separator + "public.xml";
+    private static void handlePublicXml(String tempApkPath, String addBigValue) {
+        String publicXmlPath = tempApkPath + File.separator + "res" + File.separator + "values" + File.separator + "public.xml";
         try {
             PublicXmlBean publicXmlBean = new PublicXmlBean(publicXmlPath);
-            publicXmlBean.resetBigValue();
+            publicXmlBean.resetBigValue(addBigValue);
             publicXmlBean.flush();
             new PublicAndRHelper().handle(tempApkPath);
         } catch (DocumentException e) {

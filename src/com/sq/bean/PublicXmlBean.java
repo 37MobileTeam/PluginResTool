@@ -67,7 +67,7 @@ public class PublicXmlBean extends XmlProcessor {
         }
     }
 
-    public void resetBigValue() {
+    public void resetBigValue(String addBigValue) {
         Map<String, Map<String, Element>> typeElementMap = new HashMap<>();
         List<Element> elements = mDocument.getRootElement().elements();
         for (Element element : elements) {
@@ -90,7 +90,7 @@ public class PublicXmlBean extends XmlProcessor {
                 if (value != null) {
                     String hex = value.replace("0x", "");
                     int number = Integer.parseInt(hex, 16);
-                    number += Integer.parseInt("00500000", 16);
+                    number += Integer.parseInt(addBigValue, 16);
                     String tempValue = "0x" + Integer.toHexString(number);
                     typeMap.put(name, tempValue);
                     List<Element> elements0 = mDocument.getRootElement().elements();
