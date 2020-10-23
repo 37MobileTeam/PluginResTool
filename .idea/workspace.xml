@@ -6,55 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd4c5bbf-494f-411e-a58b-975338417b62" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/PluginResTool_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apktool_2.3.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/sq/config/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/sq/config/PropertiesUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keystore/37.keystore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/keystore/gd.keystore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/local_config.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/LocalPropertiesConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/ResTool.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/ResTool.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/bean/PublicXmlBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/bean/PublicXmlBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/helper/PublicAndRHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/helper/PublicAndRHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/helper/RValueHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/helper/RValueHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/ApkSignUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/DecodeUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/DecodeUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/FileUtil$FileUtilHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/FileUtil$FileUtilHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/FileUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/FileUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/LogUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/LogUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/MachineUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/MachineUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/StringUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/StringUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/ZipAlignUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/ZipAlignUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/manifest/AndroidNameComparor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/manifest/AndroidNameComparor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/manifest/AppProcessor$APPLICATION.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/manifest/AppProcessor$APPLICATION.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/manifest/AppProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/manifest/AppProcessor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/manifest/ManifestProcessor$Manifest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/manifest/ManifestProcessor$Manifest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/manifest/ManifestProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/manifest/ManifestProcessor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/manifest/Permission.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/manifest/Permission.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/manifest/PermissionProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/manifest/PermissionProcessor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/manifest/PlugProcessor$PLUG.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/manifest/PlugProcessor$PLUG.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/manifest/PlugProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/manifest/PlugProcessor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/manifest/plug/ActivityProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/manifest/plug/ActivityProcessor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/manifest/plug/ServiceProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/manifest/plug/ServiceProcessor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/values/StringProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/values/StringProcessor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/xml/IElementCompare.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/xml/IElementCompare.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/xml/ManifestHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/xml/ManifestHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/xml/XmlProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PluginResTool/com/sq/tool/xml/XmlProcessor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin.apk" beforeDir="false" afterPath="$PROJECT_DIR$/plugin.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin0.apk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sq/LocalPropertiesConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sq/ResTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sq/ResTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sq/bean/PublicXmlBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sq/bean/PublicXmlBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sq/tool/ApkSignUtil.java" beforeDir="false" />
-    </list>
+    <list default="true" id="cd4c5bbf-494f-411e-a58b-975338417b62" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/sq/ResTool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+            <state relative-caret-position="226">
+              <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -120,8 +72,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/sq/ResTool.java" />
         <option value="$PROJECT_DIR$/src/com/sq/config/Config.java" />
+        <option value="$PROJECT_DIR$/src/com/sq/ResTool.java" />
       </list>
     </option>
   </component>
@@ -258,7 +210,7 @@
       <window_info anchor="bottom" id="TODO" />
       <window_info anchor="bottom" id="Run" sideWeight="0.7299444" weight="0.36164382" />
       <window_info anchor="bottom" id="Debug" weight="0.48630136" />
-      <window_info active="true" anchor="bottom" id="Terminal" sideWeight="0.49960285" visible="true" weight="0.22191781" />
+      <window_info active="true" anchor="bottom" id="Terminal" sideWeight="0.49960285" visible="true" weight="0.41232878" />
       <window_info anchor="bottom" id="Event Log" sideWeight="0.2700556" side_tool="true" weight="0.36712328" />
       <window_info anchor="bottom" id="Find" />
       <window_info anchor="bottom" id="Messages" sideWeight="0.49960285" weight="0.4671233" />
@@ -513,8 +465,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sq/ResTool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+        <state relative-caret-position="226">
+          <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
