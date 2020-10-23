@@ -25,7 +25,7 @@ public class ResTool {
                 rootDir + File.separator + "work",
                 "00500000");
         //处理
-        handleResPkg(config);:
+        handleResPkg(config);
     }
 
     public static void handleResPkg(Config config) {
